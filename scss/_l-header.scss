@@ -1,7 +1,51 @@
 .header {
-  padding: 2.25rem 0;
+  padding: 36px 0;
 
   & .container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  &__phone {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    filter: drop-shadow(0px 4px 4px rgba($color: $black, $alpha: 0.25));
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: $black;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 1.2px;
+      text-decoration: none;
+
+      & img {
+        width: 18px;
+        height: auto;
+      }
+    }
+
+    &-button {
+      padding: 0;
+      color: $brown;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%; /* 171.429% */
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      border: none;
+      border-bottom: 1px dashed $brown;
+      background: none;
+      cursor: pointer;
+    }
   }
 }
