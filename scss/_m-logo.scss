@@ -1,6 +1,15 @@
 .logo {
-  &_image {
-    max-height: 2.625rem;
+  & a {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    max-height: 42px;
     width: auto;
+
+    @include mobile {
+      max-height: 27px;
+    }
   }
 }
