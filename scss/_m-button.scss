@@ -1,0 +1,34 @@
+.button {
+  width: 324px;
+  padding: 20px 0;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: $baseTransition;
+
+  &:active {
+    transform: scale(0.94);
+  }
+
+  &_primary {
+    box-shadow: 5px 5px 0 #770d13;
+    background: linear-gradient(142deg, #d44b39 0%, #9f1921 100%);
+  }
+
+  &_light {
+    box-shadow: 5px 5px 0 #97794d;
+    background: linear-gradient(135deg, #d2bc9c 0%, #bc9b6a 100%);
+  }
+
+  &_dark {
+    box-shadow: 5px 5px 0 #161616;
+    background: linear-gradient(171deg, #636363 0%, #000 100%);
+  }
+}

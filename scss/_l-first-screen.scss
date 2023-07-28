@@ -1,0 +1,187 @@
+.first-screen {
+  & .container {
+    position: relative;
+    max-width: 1920px;
+    min-height: 900px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #486513;
+
+    @include mobile {
+      min-height: 830px;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    max-width: 1386px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    @include mobile {
+      top: 340px;
+    }
+
+    &-top {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__video-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 63px 18px 23px;
+    border: 1px solid #c9ad86;
+    color: $white;
+    font-size: 9px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #d2bc9c 0%, #bc9b6a 100%);
+    transition: $baseTransition;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+
+    &:active {
+      transform: scale(0.94);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 23px;
+      display: block;
+      width: 20px;
+      height: 26px;
+      background: url('../assets/play-icon.svg') no-repeat center;
+      transform: translateY(-50%);
+    }
+
+    & span {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 2.6px;
+    }
+  }
+
+  &__text {
+    max-width: 424px;
+    margin: 40px 0 70px;
+    color: $white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1.2px;
+
+    @include mobile {
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+  }
+
+  & .button {
+    @include mobile {
+      display: block;
+      max-width: 324px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    text-align: left;
+
+    @include mobile {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    & img {
+      max-width: 560px;
+      width: 100%;
+      height: auto;
+
+      @include mobile {
+        max-width: 284px;
+      }
+    }
+  }
+
+  &__tags {
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: $white;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    line-height: 120%;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    width: 108px;
+    height: 108px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(4px 4px 24px #2c4319);
+
+    &_discont {
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      background-image: url('../assets/discont-tag-bg.svg');
+    }
+
+    &_taxi {
+      font-size: 8px;
+      line-height: 10px;
+      background-image: url('../assets/taxi-tag-bg.svg');
+
+      & img {
+        width: 35px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &-percent {
+      font-size: 34px;
+      font-weight: 700;
+    }
+
+    &-taxi-title {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+}
