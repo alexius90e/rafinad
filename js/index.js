@@ -1,4 +1,4 @@
-const firstScreenThumbs = new Swiper('#firstScreenThumbs', {
+export const firstScreenThumbs = new Swiper('#firstScreenThumbs', {
   loop: true,
   spaceBetween: 8,
   freeMode: true,
@@ -24,7 +24,7 @@ const firstScreenThumbs = new Swiper('#firstScreenThumbs', {
   },
 });
 
-const firstScreenSwiper = new Swiper('#firstScreenSlider', {
+export const firstScreenSwiper = new Swiper('#firstScreenSlider', {
   loop: true,
   allowTouchMove: false,
   pagination: {
@@ -39,7 +39,7 @@ const firstScreenSwiper = new Swiper('#firstScreenSlider', {
   },
 });
 
-const firstScreen = document.querySelector('.first-screen');
+export const firstScreen = document.querySelector('.first-screen');
 
 firstScreen.addEventListener('pointermove', (event) => {
   const firstScreenSlides = event.currentTarget.querySelectorAll('.first-screen__slide');
@@ -70,4 +70,46 @@ firstScreen.addEventListener('pointermove', (event) => {
       layer.element.setAttribute('style', `transform: translate(${x}px, ${y}px) scale(1.08);`);
     }
   });
+});
+
+export const specificationThumbs = new Swiper('#specificationThumbs', {
+  loop: true,
+  spaceBetween: 8,
+  freeMode: true,
+  watchSlidesProgress: true,
+  centerInsufficientSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 4.5,
+    },
+    768: {
+      slidesPerView: 5.5,
+    },
+    992: {
+      slidesPerView: 6,
+    },
+    1200: {
+      slidesPerView: 7,
+    },
+    1400: {
+      slidesPerView: 8,
+    },
+  },
+});
+
+export const specificationSwiper = new Swiper('#specificationSlider', {
+  loop: true,
+  pagination: {
+    el: '#specificationSlider .swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.specification .swiper-button-next',
+    prevEl: '.specification .swiper-button-prev',
+  },
+  thumbs: {
+    swiper: specificationThumbs,
+  },
 });
