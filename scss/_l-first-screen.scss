@@ -2,14 +2,8 @@
   & .container {
     position: relative;
     max-width: 1920px;
-    min-height: 900px;
     margin: 0 auto;
     padding: 0;
-    background-color: #486513;
-
-    @include mobile {
-      min-height: 830px;
-    }
   }
 
   &__info {
@@ -17,6 +11,7 @@
     top: 58px;
     left: 0;
     right: 0;
+    z-index: 100;
     max-width: 1386px;
     margin: 0 auto;
     padding: 0 16px;
@@ -182,6 +177,95 @@
       font-size: 24px;
       line-height: 24px;
       font-weight: 700;
+    }
+  }
+
+  & .swiper-button {
+    &-prev,
+    &-next {
+      top: auto;
+      bottom: calc(170px / 2);
+      z-index: 101;
+      width: 43px;
+      height: 43px;
+      transform: translateY(50%);
+
+      &::after {
+        content: '';
+        display: block;
+        width: 43px;
+        height: 43px;
+        border-radius: 43px;
+        background-color: #fff;
+        box-shadow: 1px 4px 24px 0px rgba(0, 0, 0, 0.25);
+        background-image: url('../assets/arrow-icon.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-next {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__slide {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    & .first-screen-primary,
+    & .first-screen-secondary {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      transform: scale(1.08);
+      will-change: transform;
+    }
+
+    & .first-screen-primary {
+      z-index: 10;
+    }
+
+    & .first-screen-secondary {
+      z-index: 9;
+    }
+
+    & .first-screen-bg {
+      transform: scale(1.08);
+      will-change: transform;
+    }
+  }
+
+  #firstScreenSlider {
+    margin-bottom: 6px;
+  }
+
+  #firstScreenThumbs {
+    & .swiper-slide {
+      transition: all ease-in-out 0.3s;
+      filter: brightness(50%);
+      cursor: pointer;
+
+      & img {
+        min-height: 170px;
+        max-width: 100%;
+        object-fit: cover;
+
+        @include mobile {
+          min-height: 156px;
+        }
+      }
+
+      &-thumb-active {
+        filter: brightness(100%);
+      }
     }
   }
 }

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script type="module" src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -54,6 +58,85 @@
     <main>
       <section class="first-screen">
         <div class="container">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper" id="firstScreenSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="first-screen__slide">
+                  <img
+                    class="first-screen-bg"
+                    src="./assets/first-screen/slide1-bg.png"
+                    alt="slide1"
+                  />
+                  <img
+                    class="first-screen-primary"
+                    src="./assets/first-screen/slide1-primary.png"
+                    alt="slide1"
+                  />
+                  <img
+                    class="first-screen-secondary"
+                    src="./assets/first-screen/slide1-secondary.png"
+                    alt="slide1"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="first-screen__slide">
+                  <img
+                    class="first-screen-bg"
+                    src="./assets/first-screen/slide1-bg.png"
+                    alt="slide1"
+                  />
+                  <img
+                    class="first-screen-primary"
+                    src="./assets/first-screen/slide1-primary.png"
+                    alt="slide1"
+                  />
+                  <img
+                    class="first-screen-secondary"
+                    src="./assets/first-screen/slide1-secondary.png"
+                    alt="slide1"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="first-screen__slide">
+                  <img
+                    class="first-screen-bg"
+                    src="./assets/first-screen/slide1-bg.png"
+                    alt="slide1"
+                  />
+                  <img
+                    class="first-screen-primary"
+                    src="./assets/first-screen/slide1-primary.png"
+                    alt="slide1"
+                  />
+                  <img
+                    class="first-screen-secondary"
+                    src="./assets/first-screen/slide1-secondary.png"
+                    alt="slide1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div thumbsSlider="" class="swiper" id="firstScreenThumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/first-screen/slide1-bg.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/first-screen/slide1-bg.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/first-screen/slide1-bg.png" />
+              </div>
+            </div>
+          </div>
+
           <article class="first-screen__info">
             <div class="first-screen__info-top">
               <button class="first-screen__video-btn">
@@ -87,6 +170,17 @@
               </div>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Описание жк</h2>
+          <p>
+            «Rafinad» — это новый формат жилой застройки город на природе, расположившийся в
+            городском округе Химки в 10 км от столицы.
+          </p>
+          <p>Нажимайте , чтобы подробно ознакомиться с проектом</p>
         </div>
       </section>
     </main>
