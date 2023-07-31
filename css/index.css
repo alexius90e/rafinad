@@ -58,7 +58,7 @@ a,
 button,
 input,
 textarea {
-  font-family: "Gotham Pro", "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: "FreeSet", "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 figure {
@@ -1515,6 +1515,124 @@ figure {
   font-weight: 300;
   line-height: 20px;
 }
+.contacts {
+  padding: 0 0 168px;
+  background-image: url("../assets/contacts/contacts-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+@media (max-width: 576px) {
+  .contacts {
+    padding: 0;
+  }
+}
+@media (min-width: 1920.1px) {
+  .contacts {
+    background-size: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contacts {
+    background-position-x: 70%;
+    background-position-y: -46%;
+  }
+}
+@media (max-width: 576px) {
+  .contacts {
+    background-position-x: 66%;
+    background-position-y: -100%;
+  }
+}
+.contacts__title {
+  margin: 50px 0 100px;
+}
+@media (max-width: 768px) {
+  .contacts__title {
+    margin: 50px 0 440px;
+  }
+}
+.contacts__info {
+  max-width: 428px;
+  padding: 54px 58px 48px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 93px 124px 0px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 93px 124px 0px rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 768px) {
+  .contacts__info {
+    margin: 0 auto;
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__info {
+    max-width: none;
+    margin: 0 -20px;
+    padding: 54px 29px 48px;
+  }
+}
+.contacts__info-title {
+  margin: 0 0 33px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.contacts__info-label {
+  margin-bottom: 5px;
+  color: #979797;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+.contacts__info-link, .contacts__info-link a {
+  color: #141414;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.42px;
+  text-decoration: none;
+}
+.contacts__info-link {
+  margin-bottom: 18px;
+}
+.contacts__info-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 21px;
+  margin-top: 44px;
+}
+.contacts__info-buttons .button {
+  max-width: none;
+  width: 100%;
+  padding: 28px 0;
+}
+.contacts__info-buttons a {
+  padding-left: 19px;
+  color: #d7bf9b;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dashed #d7bf9b;
+  background: url("../assets/contacts/download-icon.svg") center left no-repeat;
+}
+
 .button {
   max-width: 324px;
   width: 100%;
