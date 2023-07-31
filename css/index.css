@@ -65,16 +65,285 @@ figure {
   margin: 0;
 }
 
+.apartments {
+  padding: 90px 0 84px;
+  background-color: #141414;
+}
+@media (max-width: 576px) {
+  .apartments {
+    padding: 90px 0 58px;
+  }
+}
+.apartments__title {
+  margin: 54px 0 13px;
+  color: #ffffff;
+}
+@media (max-width: 576px) {
+  .apartments__title {
+    margin: 60px auto 40px;
+  }
+}
+.apartments__description {
+  max-width: 640px;
+  margin: 13px auto 52px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 31px;
+  letter-spacing: 1.05px;
+}
+@media (max-width: 576px) {
+  .apartments__description {
+    margin: 40px auto 60px;
+    color: #d6d6d6;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+.apartments__buttons-wrapper {
+  text-align: center;
+}
+.apartments__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 80px 0 64px;
+}
+@media (max-width: 768px) {
+  .apartments__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 80px -20px 64px;
+  }
+}
+.apartments__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc((100% - 30px) / 2);
+          flex: 1 0 calc((100% - 30px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 36px 48px;
+  max-width: calc((100% - 30px) / 2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 54px 36px;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .apartments__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 576px;
+    padding: 46px 25px 52px;
+  }
+}
+.apartments__item-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 240px;
+}
+.apartments__item-image img {
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+}
+.apartments__item-info {
+  -webkit-box-flex: 10;
+      -ms-flex: 10 0 auto;
+          flex: 10 0 auto;
+  width: 240px;
+}
+.apartments__item-title {
+  margin: 0 0 33px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .apartments__item-title {
+    text-align: center;
+  }
+}
+.apartments__item-properties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 8px 24px;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+}
+@media (max-width: 768px) {
+  .apartments__item-properties {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .apartments__item-properties {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.apartments__item-properties-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.apartments__item-property {
+  padding-left: 33px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.apartments__item-property_area {
+  background-image: url("../assets/apartaments/area-icon.svg");
+}
+.apartments__item-property_rooms {
+  background-image: url("../assets/apartaments/rooms-icon.svg");
+}
+.apartments__item-property_finishing {
+  background-image: url("../assets/apartaments/finishing-icon.svg");
+}
+.apartments__item-property_floor {
+  background-image: url("../assets/apartaments/floor-icon.svg");
+}
+.apartments__item-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 0 30px;
+}
+.apartments__item-price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 7px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.apartments__item-price-per-meter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+}
+@media (max-width: 768px) {
+  .apartments__item-price-per-meter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+.apartments__item-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.apartments__item-buttons .button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.apartments__item-link {
+  display: inline-block;
+  color: #d7bf9b;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dashed #d7bf9b;
+}
+
 .consultation {
-  padding: 100px 0 120px;
+  padding: 236px 0 120px;
   background-color: #f7f7f7;
   background-image: url("../assets/consulting-bg.png");
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 @media (max-width: 576px) {
   .consultation {
-    padding: 90px 0;
+    padding: 290px 0 90px;
   }
 }
 .consultation__title {
@@ -659,16 +928,21 @@ figure {
   margin: 0;
   color: #141414;
   background-image: url("../assets/specification-bg.jpg");
-  background-position: center bottom 136px;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 1920px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
+}
+@media (min-width: 1920.1px) {
+  .specification {
+    background-size: 100%;
+  }
 }
 @media (max-width: 576px) {
   .specification {
     margin: 68px 0 0;
     background-image: url("../assets/specification-bg-sm.png");
-    background-position: center bottom 200px;
+    background-position: center bottom;
     background-size: 576px;
   }
 }
@@ -859,7 +1133,7 @@ figure {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 16px;
-  margin: 0 0 260px;
+  margin: 0 0 124px;
 }
 @media (max-width: 768px) {
   .specification__advantages {
@@ -878,7 +1152,7 @@ figure {
 }
 @media (max-width: 576px) {
   .specification__advantages {
-    margin: 0 0 80px;
+    margin: 0 0 -56px;
   }
 }
 .specification__advantage {
@@ -941,6 +1215,7 @@ figure {
 }
 .specification__awards {
   position: relative;
+  top: 136px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1099,6 +1374,11 @@ figure {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+@media (min-width: 1920.1px) {
+  .video-section {
+    background-size: 100%;
+  }
+}
 .video-section .container {
   position: relative;
   max-width: 1920px;
@@ -1147,6 +1427,7 @@ figure {
   width: 113px;
   height: 91px;
   background: url("../assets/video-button.svg") center no-repeat;
+  border: none;
   -webkit-transition: all ease-in-out 0.15s;
   transition: all ease-in-out 0.15s;
   cursor: pointer;

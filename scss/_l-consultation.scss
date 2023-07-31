@@ -1,12 +1,13 @@
 .consultation {
-  padding: 100px 0 120px;
+  padding: calc(100px + 136px) 0 120px;
   background-color: #f7f7f7;
   background-image: url('../assets/consulting-bg.png');
   background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: 100%;
 
   @include mobile {
-    padding: 90px 0;
+    padding: calc(90px + 200px) 0 90px;
   }
 
   &__title {

@@ -3,15 +3,19 @@
   margin: 0;
   color: $black;
   background-image: url('../assets/specification-bg.jpg');
-  background-position: center bottom 136px;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 1920px;
-  background-color: #f9f9f9;
+  background-color: $white;
+
+  @media (min-width: 1920.1px) {
+    background-size: 100%;
+  }
 
   @include mobile {
     margin: 68px 0 0;
     background-image: url('../assets/specification-bg-sm.png');
-    background-position: center bottom 200px;
+    background-position: center bottom;
     background-size: 576px;
   }
 
@@ -190,7 +194,7 @@
     align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
-    margin: 0 0 260px;
+    margin: 0 0 calc(260px - 136px);
 
     @include tablet {
       flex-direction: column;
@@ -200,7 +204,7 @@
     }
 
     @include mobile {
-      margin: 0 0 80px;
+      margin: 0 0 calc(80px - 136px);
     }
   }
 
@@ -268,6 +272,7 @@
 
   &__awards {
     position: relative;
+    top: 136px;
     display: flex;
     align-items: center;
     justify-content: space-between;

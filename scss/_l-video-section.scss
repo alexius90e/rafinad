@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   overflow: hidden;
 
+  @media (min-width: 1920.1px) {
+    background-size: 100%;
+  }
+
   .container {
     position: relative;
     max-width: 1920px;
@@ -51,6 +55,7 @@
     width: 113px;
     height: 91px;
     background: url('../assets/video-button.svg') center no-repeat;
+    border: none;
     transition: $baseTransition;
     cursor: pointer;
 

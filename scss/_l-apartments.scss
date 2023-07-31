@@ -1,0 +1,211 @@
+.apartments {
+  padding: 90px 0 84px;
+  background-color: $black;
+
+  @include mobile {
+    padding: 90px 0 58px;
+  }
+
+  &__title {
+    margin: 54px 0 13px;
+    color: $white;
+
+    @include mobile {
+      margin: 60px auto 40px;
+    }
+  }
+
+  &__description {
+    max-width: 640px;
+    margin: 13px auto 52px;
+    color: $white;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 1.05px;
+
+    @include mobile {
+      margin: 40px auto 60px;
+      color: #d6d6d6;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+  }
+
+  &__buttons-wrapper {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 80px 0 64px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 80px -20px 64px;
+    }
+  }
+
+  &__item {
+    flex: 1 0 calc((100% - 30px) / 2);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px 48px;
+    max-width: calc((100% - 30px) / 2);
+    box-sizing: border-box;
+    padding: 54px 36px;
+    background-color: $white;
+
+    @include tablet {
+      flex: 1 0 100%;
+      max-width: 576px;
+      padding: 46px 25px 52px;
+    }
+
+    &-image {
+      flex: 1 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 240px;
+
+      & img {
+        max-width: 240px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-info {
+      flex: 10 0 auto;
+      width: 240px;
+    }
+
+    &-title {
+      margin: 0 0 33px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+
+      @include tablet {
+        text-align: center;
+      }
+    }
+
+    &-properties {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 8px 24px;
+      margin: 0 0 30px;
+      padding: 0;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 27px;
+
+      @include tablet {
+        align-items: center;
+      }
+
+      @include mobile {
+        justify-content: space-between;
+      }
+
+      &-block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    &-property {
+      padding-left: 33px;
+      white-space: nowrap;
+      box-sizing: border-box;
+      background-position: left center;
+      background-repeat: no-repeat;
+
+      &_area {
+        background-image: url('../assets/apartaments/area-icon.svg');
+      }
+
+      &_rooms {
+        background-image: url('../assets/apartaments/rooms-icon.svg');
+      }
+
+      &_finishing {
+        background-image: url('../assets/apartaments/finishing-icon.svg');
+      }
+
+      &_floor {
+        background-image: url('../assets/apartaments/floor-icon.svg');
+      }
+    }
+
+    &-prices {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 0 0 30px;
+    }
+
+    &-price {
+      flex: 1 0 30%;
+      width: max-content;
+      padding: 7px 20px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      text-align: center;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 38px;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      &-per-meter {
+        flex: 1 1 30%;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 19px;
+
+        @include tablet {
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      & .button {
+        box-shadow: none;
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      color: #d7bf9b;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 1px dashed #d7bf9b;
+    }
+  }
+}
