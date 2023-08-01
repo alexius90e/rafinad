@@ -1,0 +1,146 @@
+.maps {
+  padding: 85px 0 0;
+  background-color: $black;
+
+  &__title {
+    max-width: 512px;
+    margin: 60px auto 73px;
+    background-image: linear-gradient(351deg, #fff 50%, #acadad 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 30px;
+
+    @include tablet {
+    }
+  }
+
+  &__descripion {
+    position: relative;
+    flex: 1 0 calc(50% - 15px);
+    padding: 84px 62px 90px;
+    box-sizing: border-box;
+    background-color: $white;
+
+    @include laptop {
+      padding: 84px 20px 90px;
+    }
+
+    @include tablet {
+      flex: 1 0 100%;
+      padding: 84px 20px 40px;
+    }
+
+    &_car {
+      order: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: calc((-58px / 2));
+        display: block;
+        width: 80px;
+        height: 58px;
+        background: url('../assets/contacts/car-icon.svg') no-repeat center;
+
+        @include tablet {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &_transport {
+      order: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: calc((-70px / 2));
+        display: block;
+        width: 65px;
+        height: 70px;
+        background: url('../assets/contacts/transport-icon.svg') no-repeat center;
+
+        @include tablet {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      @include tablet {
+        order: 2;
+      }
+    }
+
+    &-title {
+      margin: 0 0 30px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &-text {
+      margin: 24px 0 0;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 23px;
+    }
+
+    &-buttons {
+      position: absolute;
+      top: calc(100% - 41px);
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+
+      @include tablet {
+        position: static;
+        margin: 40px 0;
+      }
+    }
+
+    & .button {
+      padding: 30px 0;
+      box-shadow: none;
+    }
+  }
+
+  &__map {
+    flex: 1 0 100%;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &-image {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &_car {
+      order: 2;
+
+      @include tablet {
+        order: 1;
+        margin: 20px 0 90px;
+      }
+    }
+
+    &_transport {
+      order: 2;
+
+      @include tablet {
+        order: 3;
+      }
+    }
+  }
+}

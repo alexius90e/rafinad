@@ -1,0 +1,101 @@
+.legend {
+  padding: 83px 120px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  background-color: $white;
+
+  @include laptop {
+    padding: 45px 20px;
+  }
+
+  &-transport {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    @include mobile {
+      display: block;
+    }
+
+    &__block {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      &:first-child {
+        @include mobile {
+          margin-bottom: 32px;
+          padding-bottom: 32px;
+          border-bottom: 1px solid #c7c7c7;
+        }
+      }
+
+      &:nth-child(2) {
+        @include mobile {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      @include laptop {
+        gap: 16px;
+      }
+    }
+  }
+
+  &-car {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    &__block {
+      flex: 1 0 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding-top: 40px;
+
+      @include tablet {
+        padding-top: 0;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      @include laptop {
+        gap: 16px;
+      }
+    }
+
+    &__logo {
+      align-items: center;
+      padding-top: 0;
+
+      @include tablet {
+        flex: 1 0 100%;
+      }
+
+      &-image {
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      & .button {
+        max-width: 296px;
+      }
+    }
+  }
+}

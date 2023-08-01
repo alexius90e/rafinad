@@ -1544,11 +1544,12 @@ figure {
   }
 }
 .contacts__title {
-  margin: 50px 0 100px;
+  max-width: 1080px;
+  margin: 50px auto 100px;
 }
 @media (max-width: 768px) {
   .contacts__title {
-    margin: 50px 0 440px;
+    margin: 50px auto 440px;
   }
 }
 .contacts__info {
@@ -1631,6 +1632,170 @@ figure {
   text-decoration: none;
   border-bottom: 1px dashed #d7bf9b;
   background: url("../assets/contacts/download-icon.svg") center left no-repeat;
+}
+
+.maps {
+  padding: 85px 0 0;
+  background-color: #141414;
+}
+.maps__title {
+  max-width: 512px;
+  margin: 60px auto 73px;
+  background-image: linear-gradient(351deg, #fff 50%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.maps__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0px 30px;
+}
+.maps__descripion {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 15px);
+          flex: 1 0 calc(50% - 15px);
+  padding: 84px 62px 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+}
+@media (max-width: 992px) {
+  .maps__descripion {
+    padding: 84px 20px 90px;
+  }
+}
+@media (max-width: 768px) {
+  .maps__descripion {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    padding: 84px 20px 40px;
+  }
+}
+.maps__descripion_car {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+.maps__descripion_car::before {
+  content: "";
+  position: absolute;
+  top: -29px;
+  display: block;
+  width: 80px;
+  height: 58px;
+  background: url("../assets/contacts/car-icon.svg") no-repeat center;
+}
+@media (max-width: 768px) {
+  .maps__descripion_car::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.maps__descripion_transport {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.maps__descripion_transport::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  display: block;
+  width: 65px;
+  height: 70px;
+  background: url("../assets/contacts/transport-icon.svg") no-repeat center;
+}
+@media (max-width: 768px) {
+  .maps__descripion_transport::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .maps__descripion_transport {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.maps__descripion-title {
+  margin: 0 0 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.maps__descripion-text {
+  margin: 24px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+}
+.maps__descripion-buttons {
+  position: absolute;
+  top: calc(100% - 41px);
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .maps__descripion-buttons {
+    position: static;
+    margin: 40px 0;
+  }
+}
+.maps__descripion .button {
+  padding: 30px 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.maps__map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  display: none;
+}
+.maps__map.active {
+  display: block;
+}
+.maps__map-image img {
+  width: 100%;
+  height: auto;
+}
+.maps__map_car {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media (max-width: 768px) {
+  .maps__map_car {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 20px 0 90px;
+  }
+}
+.maps__map_transport {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media (max-width: 768px) {
+  .maps__map_transport {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 .button {
@@ -1747,4 +1912,131 @@ figure {
   line-height: 140%;
   letter-spacing: 0.9px;
   text-decoration: none;
+}
+
+.legend {
+  padding: 83px 120px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  background-color: #ffffff;
+}
+@media (max-width: 992px) {
+  .legend {
+    padding: 45px 20px;
+  }
+}
+.legend-transport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+}
+@media (max-width: 576px) {
+  .legend-transport {
+    display: block;
+  }
+}
+.legend-transport__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+@media (max-width: 576px) {
+  .legend-transport__block:first-child {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #c7c7c7;
+  }
+}
+@media (max-width: 576px) {
+  .legend-transport__block:nth-child(2) {
+    margin-bottom: 32px;
+  }
+}
+.legend-transport__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .legend-transport__item {
+    gap: 16px;
+  }
+}
+.legend-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+}
+.legend-car__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  padding-top: 40px;
+}
+@media (max-width: 768px) {
+  .legend-car__block {
+    padding-top: 0;
+  }
+}
+.legend-car__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .legend-car__item {
+    gap: 16px;
+  }
+}
+.legend-car__logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0;
+}
+@media (max-width: 768px) {
+  .legend-car__logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+}
+.legend-car__logo-image img {
+  width: 100%;
+  height: auto;
+}
+.legend-car__logo .button {
+  max-width: 296px;
 }
