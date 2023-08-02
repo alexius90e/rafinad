@@ -397,21 +397,69 @@
       <section class="excursion">
         <div class="container">
           <div class="excursion__top">
-            <div class="excursion__block">
-              <h2>Приезжайте на экскурсию в ЖК «Rafinad»</h2>
-              <p>
+            <div class="excursion__block excursion__main">
+              <h2 class="excursion__title">Приезжайте на экскурсию в ЖК «Rafinad»</h2>
+              <p class="excursion__description">
                 Пройдетесь по территории, ознакомитесь с квартирами и почувствуете атмосферу жилого
                 комплекса
               </p>
             </div>
 
-            <div class="excursion__block"></div>
+            <div class="excursion__block excursion__form">
+              <div class="excursion__form-wrapper">
+                <h3 class="excursion__title-secondary">Заполните форму</h3>
 
-            <div class="excursion__block">
+                <p class="excursion__description">
+                  и специалист свяжется с вами, и расскажет как будет проходить экскурсия по жилому
+                  комплексу
+                </p>
+
+                <form>
+                  <input
+                    class="excursion__form-input excursion__form-input_name"
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                    required
+                  />
+
+                  <input
+                    class="excursion__form-input excursion__form-input_date"
+                    type="text"
+                    name="date"
+                    placeholder="Предполагаемая дата"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    required
+                  />
+
+                  <input
+                    class="excursion__form-input excursion__form-input_phone"
+                    type="tel"
+                    name="phone"
+                    placeholder="Введите номер телефона"
+                    required
+                  />
+
+                  <input
+                    class="button button_primary"
+                    type="submit"
+                    value="записаться на экскурсию в «Rafinad»"
+                  />
+                </form>
+
+                <div class="excursion__agreement">
+                  Нажимая на кнопку, вы даете свое согласие на
+                  <span>обработку персональных данных</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="excursion__block excursion__info">
               <div class="cube-logo"></div>
 
-              <h3>Что будет на экскурсии?</h3>
-              <ul>
+              <h3 class="excursion__title-secondary">Что будет на экскурсии?</h3>
+              <ul class="excursion__info-list">
                 <li>Пройдетесь по территории ЖК</li>
                 <li>Оцените качество строительства и благоустройства</li>
                 <li>Посмотрите интересующие квартиры</li>
@@ -419,7 +467,38 @@
               </ul>
             </div>
           </div>
+
+          <div class="excursion__video">
+            <h3 class="excursion__video-title">
+              Можете посмотреть видео-экскурсию по Жилому Комплексу
+            </h3>
+
+            <div class="excursion__video-block">
+              <p class="excursion__video-time">
+                <span>Время просмотра — </span><br />3 минуты 44 секунды
+              </p>
+
+              <div class="excursion__video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/NMdMSi6RNMw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="excursion__video-manager">
+                <img src="./assets/excursion/avatar.png" alt="avatar" />
+                <p>
+                  Видео-экскурсию проводит менеджер отдела продаж — <span>Татьяна Кузьмина</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="excursion__green-bg"></div>
       </section>
 
       <section class="apartments">
