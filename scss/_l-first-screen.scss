@@ -6,6 +6,39 @@
     padding: 0;
   }
 
+  &__paralax {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 11px;
+
+    & .first-screen-primary,
+    & .first-screen-secondary {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      transform: scale(1.08);
+      will-change: transform;
+    }
+
+    & .first-screen-primary {
+      z-index: 10;
+    }
+
+    & .first-screen-secondary {
+      z-index: 9;
+    }
+
+    & .first-screen-bg {
+      transform: scale(1.08);
+      will-change: transform;
+    }
+  }
+
   &__info {
     position: absolute;
     top: 58px;
@@ -183,12 +216,8 @@
   & .swiper-button {
     &-prev,
     &-next {
-      top: auto;
-      bottom: calc(170px / 2);
-      z-index: 101;
       width: 43px;
       height: 43px;
-      transform: translateY(50%);
 
       &::after {
         content: '';
@@ -211,48 +240,8 @@
     }
   }
 
-  &__slide {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-
-    & .first-screen-primary,
-    & .first-screen-secondary {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 10;
-      transform: scale(1.08);
-      will-change: transform;
-    }
-
-    & .first-screen-primary {
-      z-index: 10;
-    }
-
-    & .first-screen-secondary {
-      z-index: 9;
-    }
-
-    & .first-screen-bg {
-      transform: scale(1.08);
-      will-change: transform;
-    }
-  }
-
   #firstScreenSlider {
-    margin-bottom: 6px;
-  }
-
-  #firstScreenThumbs {
     & .swiper-slide {
-      transition: all ease-in-out 0.3s;
-      filter: brightness(50%);
-      cursor: pointer;
-
       & img {
         min-height: 170px;
         max-width: 100%;
@@ -261,10 +250,6 @@
         @include mobile {
           min-height: 156px;
         }
-      }
-
-      &-thumb-active {
-        filter: brightness(100%);
       }
     }
   }

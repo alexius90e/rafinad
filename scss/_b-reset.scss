@@ -2,19 +2,23 @@
   font-weight: 400;
   font-family: 'FreeSet';
   src: url('../fonts/FRS55.otf');
+  font-display: swap;
 }
 
 @font-face {
   font-weight: 700;
   font-family: 'FreeSet';
   src: url('../fonts/FRS75.otf');
+  font-display: swap;
 }
 
 @font-face {
   font-weight: 300;
   font-family: 'FreeSet';
   src: url('../fonts/FRS45.otf');
+  font-display: swap;
 }
+
 html {
   font-size: 1rem;
   font-family: 'FreeSet', 'Segoe UI', Tahoma, Verdana, sans-serif;
