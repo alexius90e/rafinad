@@ -475,7 +475,7 @@ figure {
 .consultation {
   padding: 236px 0 120px;
   background-color: #f7f7f7;
-  background-image: url("../assets/consulting-bg.png");
+  background-image: url("../assets/consulting-bg.webp");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1070,7 +1070,7 @@ figure {
   padding-top: 122px;
   margin: 0;
   color: #141414;
-  background-image: url("../assets/specification-bg.jpg");
+  background-image: url("../assets/specification-bg.webp");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 1920px;
@@ -1084,7 +1084,7 @@ figure {
 @media (max-width: 576px) {
   .specification {
     margin: 68px 0 0;
-    background-image: url("../assets/specification-bg-sm.png");
+    background-image: url("../assets/specification-bg-sm.webp");
     background-position: center bottom;
     background-size: 576px;
   }
@@ -1328,7 +1328,7 @@ figure {
   display: block;
   width: 177px;
   height: 144px;
-  background: url("../assets/luftbaloons.png") center no-repeat;
+  background: url("../assets/luftbaloons.webp") center no-repeat;
 }
 @media (max-width: 1436px) {
   .specification__advantage:first-child::before {
@@ -1520,7 +1520,7 @@ figure {
 .video-section {
   padding: 295px 0 320px;
   background-color: #141414;
-  background-image: url("../assets/video-section-bg.png");
+  background-image: url("../assets/video-section-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1673,7 +1673,7 @@ figure {
 }
 .contacts {
   padding: 0 0 168px;
-  background-image: url("../assets/contacts/contacts-bg.png");
+  background-image: url("../assets/contacts/contacts-bg.webp");
   background-position: center bottom;
   background-repeat: no-repeat;
 }
@@ -1980,7 +1980,7 @@ figure {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: url("../assets/excursion/clouds.png") top center no-repeat;
+  background: url("../assets/excursion/clouds.webp") top center no-repeat;
   background-size: cover;
 }
 .excursion:after {
@@ -1994,7 +1994,7 @@ figure {
   width: 100%;
   height: 100%;
   z-index: 3;
-  background: url("../assets/excursion/buildings.png") center bottom 0px no-repeat;
+  background: url("../assets/excursion/buildings.webp") center bottom 0px no-repeat;
   background-size: 1920px;
 }
 @media (max-width: 768px) {
@@ -2016,11 +2016,11 @@ figure {
   z-index: 9;
   height: 442px;
   width: 100%;
-  background: url("../assets/excursion/green.png") center top 50px no-repeat;
+  background: url("../assets/excursion/green.webp") center top 50px no-repeat;
 }
 @media (min-width: 1921px) {
   .excursion__green-bg {
-    background: url("../assets/excursion/green.png") center top 0 no-repeat;
+    background: url("../assets/excursion/green.webp") center top 0 no-repeat;
     background-size: 100%;
   }
 }

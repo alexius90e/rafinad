@@ -2,7 +2,7 @@
   padding-top: 122px;
   margin: 0;
   color: $black;
-  background-image: url('../assets/specification-bg.jpg');
+  background-image: url('../assets/specification-bg.webp');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 1920px;
@@ -14,7 +14,7 @@
 
   @include mobile {
     margin: 68px 0 0;
-    background-image: url('../assets/specification-bg-sm.png');
+    background-image: url('../assets/specification-bg-sm.webp');
     background-position: center bottom;
     background-size: 576px;
   }
@@ -234,7 +234,7 @@
         display: block;
         width: 177px;
         height: 144px;
-        background: url('../assets/luftbaloons.png') center no-repeat;
+        background: url('../assets/luftbaloons.webp') center no-repeat;
 
         @media (max-width: 1436px) {
           display: none;
