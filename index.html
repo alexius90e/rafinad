@@ -501,7 +501,7 @@
         <div class="excursion__green-bg"></div>
       </section>
 
-      <section class="apartments">
+      <section class="apartments active">
         <div class="container">
           <div class="cube-logo"></div>
 
@@ -512,8 +512,64 @@
             время
           </p>
 
-          <div class="apartments__buttons-wrapper">
-            <button class="button button_dark">Открыть фильтр подбора квартир</button>
+          <div class="apartments__buttons-wrapper apartments__filter">
+            <button class="button button_dark apartments__filter-button">
+              Открыть фильтр подбора квартир
+            </button>
+
+            <div class="apartments__filter-container">
+              <div class="apartments__filter-label">Цена:</div>
+              <div class="apartments__filter-values">
+                <div class="apartments__filter-value">92 000 000 р</div>
+                <div class="apartments__filter-value-divider">-</div>
+                <div class="apartments__filter-value">200 000 000 р</div>
+              </div>
+              <div class="double-range-slider">
+                <input type="range" min="0" max="100" value="20" step="1" />
+                <input type="range" min="0" max="100" value="80" step="1" />
+              </div>
+
+              <div class="apartments__filter-label">Площадь:</div>
+              <div class="apartments__filter-values">
+                <div class="apartments__filter-value">63 м<sup>2</sup></div>
+                <div class="apartments__filter-value-divider">-</div>
+                <div class="apartments__filter-value">233 м<sup>2</sup></div>
+              </div>
+              <div class="double-range-slider">
+                <input type="range" min="0" max="100" value="20" step="1" />
+                <input type="range" min="0" max="100" value="80" step="1" />
+              </div>
+
+              <div class="apartments__filter-label">Этаж:</div>
+              <div class="apartments__filter-values">
+                <div class="apartments__filter-value">1</div>
+                <div class="apartments__filter-value-divider">-</div>
+                <div class="apartments__filter-value">24</div>
+              </div>
+              <div class="double-range-slider">
+                <input type="range" min="0" max="100" value="20" step="1" />
+                <input type="range" min="0" max="100" value="80" step="1" />
+              </div>
+
+              <div class="apartments__filter-label">Спальни:</div>
+              <div class="apartments__filter-values">
+                <div class="apartments__filter-value">1</div>
+                <div class="apartments__filter-value-divider">-</div>
+                <div class="apartments__filter-value">5</div>
+              </div>
+              <div class="double-range-slider">
+                <input type="range" min="0" max="100" value="20" step="1" />
+                <input type="range" min="0" max="100" value="80" step="1" />
+              </div>
+
+              <div class="apartments__filter-reset">
+                <button class="apartments__filter-reset-button">сбросить фильтр</button>
+              </div>
+
+              <button class="button button_primary apartments__filter-apply-button">
+                применить фильтр
+              </button>
+            </div>
           </div>
 
           <div class="apartments__list">
@@ -682,6 +738,8 @@
             <button class="button button_primary">показать все квартиры</button>
           </div>
         </div>
+
+        <div class="apartments__layout"></div>
       </section>
 
       <section class="documents">

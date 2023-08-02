@@ -143,3 +143,21 @@ transportButton.addEventListener('click', (event) => {
 
   maps.forEach((map) => map.classList.toggle('active'));
 });
+
+// apartments
+
+const filterToggler = document.querySelector('.apartments__filter-button');
+
+const filterLayout = document.querySelector('.apartments__layout');
+
+const apartments = document.querySelector('.apartments');
+
+const filter = document.querySelector('.apartments__filter');
+
+filterToggler.addEventListener('click', () => {
+  apartments.classList.toggle('active');
+});
+
+filterLayout.addEventListener('click', () => {
+  apartments.classList.remove('active');
+});
