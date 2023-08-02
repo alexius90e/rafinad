@@ -76,6 +76,10 @@ figure {
   }
 }
 .apartments__title {
+  background-image: linear-gradient(351deg, #fff 50%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 54px 0 13px;
   color: #ffffff;
 }
@@ -348,6 +352,10 @@ figure {
   }
 }
 .consultation__title {
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   max-width: 920px;
   margin: 70px auto 40px;
 }
@@ -948,6 +956,10 @@ figure {
   }
 }
 .specification__title {
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0 0 30px;
 }
 .specification__description {
@@ -1277,6 +1289,10 @@ figure {
   }
 }
 .specification__awards-title {
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   z-index: 11;
   max-width: 420px;
@@ -1413,6 +1429,10 @@ figure {
   }
 }
 .video-section__title {
+  background-image: linear-gradient(351deg, #fff 50%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0 0 120px;
   color: #ffffff;
   line-height: 74px;
@@ -1453,11 +1473,12 @@ figure {
   margin: 96px 0 108px;
 }
 .documents__title {
-  max-width: 520px;
-  margin: 60px auto 38px;
-  background: linear-gradient(351deg, #1e1e28 0%, #acadad 100%);
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
   -webkit-background-clip: text;
           background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 520px;
+  margin: 60px auto 38px;
 }
 .documents__description {
   margin: 38px 0 72px;
@@ -1545,6 +1566,10 @@ figure {
   }
 }
 .contacts__title {
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   max-width: 1080px;
   margin: 50px auto 100px;
 }
@@ -1640,12 +1665,12 @@ figure {
   background-color: #141414;
 }
 .maps__title {
-  max-width: 512px;
-  margin: 60px auto 73px;
   background-image: linear-gradient(351deg, #fff 50%, #acadad 100%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  max-width: 512px;
+  margin: 60px auto 73px;
 }
 .maps__info {
   display: -webkit-box;
@@ -2064,6 +2089,10 @@ figure {
   margin-left: -1rem;
 }
 .excursion__title {
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0 0 60px;
   font-size: 40px;
   font-weight: 700;
@@ -2135,6 +2164,10 @@ figure {
   }
 }
 .excursion__video-title {
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0 auto 54px;
   font-size: 38px;
   font-weight: 700;

@@ -243,6 +243,7 @@
   }
 
   &__title {
+    @include titleBgBlack;
     margin: 0 0 60px;
     font-size: 40px;
     font-weight: 700;
@@ -310,6 +311,7 @@
     }
 
     &-title {
+      @include titleBgBlack;
       margin: 0 auto 54px;
       font-size: 38px;
       font-weight: 700;

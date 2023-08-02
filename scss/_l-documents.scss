@@ -2,10 +2,9 @@
   margin: 96px 0 108px;
 
   &__title {
+    @include titleBgBlack;
     max-width: 520px;
     margin: 60px auto 38px;
-    background: linear-gradient(351deg, #1e1e28 0%, #acadad 100%);
-    background-clip: text;
   }
 
   &__description {

@@ -11,6 +11,7 @@
   }
 
   &__title {
+    @include titleBgBlack;
     max-width: 920px;
     margin: 70px auto 40px;
 

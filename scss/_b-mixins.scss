@@ -21,3 +21,15 @@
     @content;
   }
 }
+
+@mixin titleBgBlack {
+  background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin titleBgWhite {
+  background-image: linear-gradient(351deg, #fff 50%, #acadad 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

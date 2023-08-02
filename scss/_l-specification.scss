@@ -20,6 +20,7 @@
   }
 
   &__title {
+    @include titleBgBlack;
     margin: 0 0 30px;
   }
 
@@ -318,6 +319,7 @@
     }
 
     &-title {
+      @include titleBgBlack;
       position: relative;
       z-index: 11;
       max-width: 420px;

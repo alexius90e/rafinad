@@ -40,6 +40,7 @@
   }
 
   &__title {
+    @include titleBgWhite;
     margin: 0 0 120px;
     color: $white;
     line-height: 74px;
