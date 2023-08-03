@@ -32,15 +32,15 @@
 
     &-item {
       list-style-type: none;
-
-      & a {
-        color: $gray;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 140%;
-        letter-spacing: 0.9px;
-        text-decoration: none;
-      }
     }
+  }
+
+  &__link {
+    color: $gray;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0.9px;
+    text-decoration: none;
   }
 }

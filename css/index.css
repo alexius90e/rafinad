@@ -669,6 +669,8 @@ figure {
 }
 
 .header {
+  position: relative;
+  z-index: 1000;
   padding: 36px 0;
   background-color: #ffffff;
 }
@@ -776,6 +778,47 @@ figure {
   width: auto;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(20, 20, 20, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(20, 20, 20, 0.25));
+}
+@media (max-width: 768px) {
+  .header .menu {
+    position: absolute;
+    top: 100%;
+    left: -1200px;
+    right: 0;
+    z-index: 200;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(100vh - 96px);
+    max-width: none;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #ffffff;
+    -webkit-transition: all ease-in-out 0.25s;
+    transition: all ease-in-out 0.25s;
+  }
+}
+@media (max-width: 768px) {
+  .header .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+}
+.header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header.active .menu {
+  left: 0;
 }
 
 .first-screen .container {
@@ -2529,7 +2572,7 @@ figure {
 .menu__list-item {
   list-style-type: none;
 }
-.menu__list-item a {
+.menu__link {
   color: #6a6a6a;
   font-size: 18px;
   font-weight: 300;
