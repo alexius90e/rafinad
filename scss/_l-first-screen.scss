@@ -14,28 +14,34 @@
     margin-bottom: 11px;
 
     & .first-screen-primary,
-    & .first-screen-secondary {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 10;
+    & .first-screen-secondary,
+    & .first-screen-bg {
+      height: 900px;
       transform: scale(1.08);
       will-change: transform;
+
+      @media (min-width: 1920.1px) {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    & .first-screen-primary,
+    & .first-screen-secondary {
+      position: absolute;
+      z-index: 10;
     }
 
     & .first-screen-primary {
+      bottom: 0;
+      right: 0;
       z-index: 10;
     }
 
     & .first-screen-secondary {
+      top: 0;
+      left: 0;
       z-index: 9;
-    }
-
-    & .first-screen-bg {
-      transform: scale(1.08);
-      will-change: transform;
     }
   }
 
@@ -44,7 +50,7 @@
     top: 58px;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 11;
     max-width: 1386px;
     margin: 0 auto;
     padding: 0 16px;

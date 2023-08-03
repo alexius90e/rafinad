@@ -840,36 +840,40 @@ figure {
           justify-content: center;
   margin-bottom: 11px;
 }
-.first-screen__paralax .first-screen-primary, .first-screen__paralax .first-screen-secondary {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+.first-screen__paralax .first-screen-primary, .first-screen__paralax .first-screen-secondary, .first-screen__paralax .first-screen-bg {
+  height: 900px;
   -webkit-transform: scale(1.08);
       -ms-transform: scale(1.08);
           transform: scale(1.08);
   will-change: transform;
 }
+@media (min-width: 1920.1px) {
+  .first-screen__paralax .first-screen-primary, .first-screen__paralax .first-screen-secondary, .first-screen__paralax .first-screen-bg {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.first-screen__paralax .first-screen-primary, .first-screen__paralax .first-screen-secondary {
+  position: absolute;
+  z-index: 10;
+}
 .first-screen__paralax .first-screen-primary {
+  bottom: 0;
+  right: 0;
   z-index: 10;
 }
 .first-screen__paralax .first-screen-secondary {
+  top: 0;
+  left: 0;
   z-index: 9;
-}
-.first-screen__paralax .first-screen-bg {
-  -webkit-transform: scale(1.08);
-      -ms-transform: scale(1.08);
-          transform: scale(1.08);
-  will-change: transform;
 }
 .first-screen__info {
   position: absolute;
   top: 58px;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 11;
   max-width: 1386px;
   margin: 0 auto;
   padding: 0 16px;

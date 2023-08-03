@@ -1,7 +1,6 @@
-export const firstScreen = document.querySelector('.first-screen');
+export const firstScreenParalax = document.querySelector('.first-screen');
 
-firstScreen.addEventListener('pointermove', (event) => {
-  const firstScreenParalax = event.currentTarget.querySelector('.first-screen__paralax');
+firstScreenParalax.addEventListener('pointermove', (event) => {
   const bg = firstScreenParalax.querySelector('.first-screen-bg');
   const primaryLayer = firstScreenParalax.querySelector('.first-screen-primary');
   const secondaryLayer = firstScreenParalax.querySelector('.first-screen-secondary');
