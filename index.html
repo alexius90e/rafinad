@@ -35,19 +35,19 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a href="#complex">О комплексе</a>
+              <a class="menu__link" href="#about">О комплексе</a>
             </li>
             <li class="menu__list-item">
-              <a href="#apparts">Квартиры</a>
+              <a class="menu__link" href="#apartments">Квартиры</a>
             </li>
             <li class="menu__list-item">
-              <a href="#mortgage">Ипотека</a>
+              <a class="menu__link" href="#mortgage">Ипотека</a>
             </li>
             <li class="menu__list-item">
-              <a href="#documents">Документы</a>
+              <a class="menu__link" href="#documents">Документы</a>
             </li>
             <li class="menu__list-item">
-              <a href="#contacts">Контакты</a>
+              <a class="menu__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -194,7 +194,7 @@
         </div>
       </section>
 
-      <section class="specification">
+      <section class="specification" id="about">
         <div class="container">
           <h2 class="specification__title">Описание жк</h2>
 
@@ -352,7 +352,7 @@
         </div>
       </section>
 
-      <section class="consultation">
+      <section class="consultation" id="mortgage">
         <div class="container">
           <div class="cube-logo"></div>
 
@@ -522,7 +522,7 @@
         <div class="excursion__green-bg"></div>
       </section>
 
-      <section class="apartments">
+      <section class="apartments" id="apartments">
         <div class="container">
           <div class="cube-logo"></div>
 
@@ -629,7 +629,7 @@
 
                 <div class="apartments__item-buttons">
                   <button class="button button_light">записаться на просмотр</button>
-                  <a class="apartments__item-link" href="#">подробнее о квартире</a>
+                  <a class="apartments__item-link" href="./details.html">подробнее о квартире</a>
                 </div>
               </div>
             </article>
@@ -669,7 +669,7 @@
 
                 <div class="apartments__item-buttons">
                   <button class="button button_light">записаться на просмотр</button>
-                  <a class="apartments__item-link" href="#">подробнее о квартире</a>
+                  <a class="apartments__item-link" href="./details.html">подробнее о квартире</a>
                 </div>
               </div>
             </article>
@@ -709,7 +709,7 @@
 
                 <div class="apartments__item-buttons">
                   <button class="button button_light">записаться на просмотр</button>
-                  <a class="apartments__item-link" href="#">подробнее о квартире</a>
+                  <a class="apartments__item-link" href="./details.html">подробнее о квартире</a>
                 </div>
               </div>
             </article>
@@ -749,7 +749,7 @@
 
                 <div class="apartments__item-buttons">
                   <button class="button button_light">записаться на просмотр</button>
-                  <a class="apartments__item-link" href="#">подробнее о квартире</a>
+                  <a class="apartments__item-link" href="./details.html">подробнее о квартире</a>
                 </div>
               </div>
             </article>
@@ -763,7 +763,7 @@
         <div class="apartments__layout"></div>
       </section>
 
-      <section class="documents">
+      <section class="documents" id="documents">
         <div class="container">
           <div class="cube-logo"></div>
 
@@ -875,7 +875,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="cube-logo"></div>
 
@@ -884,22 +884,22 @@
           <div class="contacts__info">
             <h3 class="contacts__info-title">Контактная информация</h3>
 
-            <div class="contacts__info-label">Телефон</div>
+            <div class="contacts__info-label contacts__info-label_phone">Телефон</div>
             <div class="contacts__info-link">
               <a href="tel:+0(000)000-00-00">+0 (000) 000-00-00</a>
             </div>
 
-            <div class="contacts__info-label">E-mail</div>
+            <div class="contacts__info-label contacts__info-label_mail">E-mail</div>
             <div class="contacts__info-link">
               <a href="mailto:sales@gmail.com">sales@gmail.com</a>
             </div>
 
-            <div class="contacts__info-label">Адрес</div>
+            <div class="contacts__info-label contacts__info-label_address">Адрес</div>
             <div class="contacts__info-link">
               <a href="tel:+0(000)000-00-00">Название ул., д. 00, ЖК «Rafinad»</a>
             </div>
 
-            <div class="contacts__info-label">График работы</div>
+            <div class="contacts__info-label contacts__info-label_time">График работы</div>
             <div class="contacts__info-link">С 9:00 до 22:00, без выходных и праздников</div>
 
             <div class="contacts__info-buttons">
