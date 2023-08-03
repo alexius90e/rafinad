@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAFINAD</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"
+      defer
+    ></script>
+    <script src="./js/details.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <button class="header__burger-button">
+          <img src="./assets/burger-icon.svg" alt="burger" />
+        </button>
+
+        <div class="logo">
+          <a href="./">
+            <img class="logo__image" src="./assets/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__link" href="#complex">О комплексе</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#apparts">Квартиры</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#mortgage">Ипотека</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#documents">Документы</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__phone">
+          <a class="header__phone-link" href="tel:+70000000000">
+            <img src="./assets/phone-icon.svg" alt="phone" />
+            <span>+7 (000) 000-00-00</span>
+          </a>
+
+          <button class="header__phone-button">перезвонить вам?</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article class="details">
+        <div class="container">
+          <div class="details__slider">
+            <div class="swiper" id="detailsSlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper" id="detailsSliderThumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/apartaments/apartment.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <div class="details__info">
+            <h3 class="details__info-title">Квартира с 1 спальней, №132</h3>
+
+            <div class="details__info-properties">
+              <div class="details__info-properties-block">
+                <div class="details__info-property details__info-property_area">
+                  Площадь: <b>63 м2</b>
+                </div>
+                <div class="details__info-property details__info-property_finishing">
+                  Без отделки
+                </div>
+              </div>
+
+              <div class="details__info-properties-block">
+                <div class="details__info-property details__info-property_rooms">
+                  Комнат: <b>1</b>
+                </div>
+                <div class="details__info-property details__info-property_floor">
+                  Этаж: <b>9</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="details__info-prices">
+              <div class="details__info-price">7 729 871 р</div>
+              <div class="details__info-price-per-meter">1 460 317 рублей за м2</div>
+            </div>
+
+            <h4 class="details__info-title_sub">Описание квартиры:</h4>
+
+            <p class="details__info-description">
+              Квартира с 1-й спальней в классическом стиле площадью 63 м² продается с мебелью.
+              Планировка включает гостиную с камином и вторым светом, кухню-столовую, 1 спальню. Из
+              окон открывается вид на улицу и благоустроенный охраняемый двор.
+            </p>
+
+            <button class="button button_primary details__info-button">
+              скачать презентацию квартиры в pdf формате
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <section class="contacts">
+        <div class="container">
+          <div class="cube-logo"></div>
+
+          <h2 class="contacts__title">Приглашаем вас на экскурсию в ЖК «Rafinad»</h2>
+
+          <div class="contacts__info">
+            <h3 class="contacts__info-title">Контактная информация</h3>
+
+            <div class="contacts__info-label">Телефон</div>
+            <div class="contacts__info-link">
+              <a href="tel:+0(000)000-00-00">+0 (000) 000-00-00</a>
+            </div>
+
+            <div class="contacts__info-label">E-mail</div>
+            <div class="contacts__info-link">
+              <a href="mailto:sales@gmail.com">sales@gmail.com</a>
+            </div>
+
+            <div class="contacts__info-label">Адрес</div>
+            <div class="contacts__info-link">
+              <a href="tel:+0(000)000-00-00">Название ул., д. 00, ЖК «Rafinad»</a>
+            </div>
+
+            <div class="contacts__info-label">График работы</div>
+            <div class="contacts__info-link">С 9:00 до 22:00, без выходных и праздников</div>
+
+            <div class="contacts__info-buttons">
+              <button class="button button_primary">записаться на экскурсию</button>
+              <a href="#">Скачать презентацию жк</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
