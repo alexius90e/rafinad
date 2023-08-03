@@ -1,35 +1,66 @@
-.contacts {
-  padding: 0 0 168px;
-  background-image: url('../assets/contacts/contacts-bg.webp');
+.details-contacts {
+  position: relative;
+  padding: 131px 0;
+  background-image: url('../assets/details-contacts-bg.webp');
   background-position: center bottom;
   background-repeat: no-repeat;
-
-  @include mobile {
-    padding: 0;
-  }
+  background-color: #f3f3f3;
 
   @media (min-width: 1920.1px) {
     background-size: 100%;
   }
 
   @include tablet {
-    background-position-x: 70%;
-    background-position-y: -46%;
-  }
-
-  @include mobile {
-    background-position-x: 66%;
-    background-position-y: -100%;
+    padding: 131px 0 500px;
+    background-position-x: 71%;
+    background-position-y: 103%;
+    background-size: 1200px;
   }
 
   &__title {
     @include titleBgBlack;
-    max-width: 1080px;
-    margin: 50px auto 100px;
+    max-width: 920px;
+    margin: 70px auto 52px;
 
     @include tablet {
-      margin: 50px auto 440px;
+      margin: 40px auto 30px;
     }
+  }
+
+  &__description {
+    max-width: 620px;
+    margin: 52px auto 70px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+
+    @include tablet {
+      margin: 30px auto 40px;
+    }
+  }
+
+  &__buttons {
+    margin: 70px auto 146px;
+    text-align: center;
+
+    @include tablet {
+      margin: 40px auto 80px;
+    }
+
+    &_top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  & .button_light {
+    padding: 30px 0;
   }
 
   &__info {

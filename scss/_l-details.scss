@@ -78,6 +78,7 @@
         background: #fff;
         box-sizing: border-box;
         filter: brightness(96%);
+        cursor: pointer;
 
         &-thumb-active {
           filter: brightness(100%);
@@ -102,6 +103,8 @@
         width: 43px;
         height: 43px;
         transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity ease-in-out 0.3s;
 
         @include tablet {
           display: none;
@@ -137,6 +140,13 @@
         top: auto;
         bottom: 16px;
       }
+    }
+  }
+
+  &__slider:hover .swiper-button {
+    &-prev,
+    &-next {
+      opacity: 1;
     }
   }
 
@@ -283,6 +293,14 @@
         transform: rotate(20deg);
         background: url('../assets/consultation/journal.webp') center no-repeat;
         background-size: contain;
+
+        @include desktop {
+          display: none;
+        }
+
+        @include laptop {
+          display: block;
+        }
 
         @include mobile {
           display: none;

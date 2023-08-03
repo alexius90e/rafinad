@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   max-width: 324px;
   width: 100%;
   padding: 20px 0;
@@ -11,6 +12,7 @@
   line-height: 22px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
   transition: $baseTransition;
 
