@@ -477,7 +477,7 @@ figure {
 }
 
 .consultation {
-  padding: 236px 0 120px;
+  padding: 226px 0 120px;
   background-color: #f7f7f7;
   background-image: url("../assets/consulting-bg.webp");
   background-position: center bottom;
@@ -1101,6 +1101,7 @@ figure {
 }
 
 .specification {
+  position: relative;
   padding-top: 122px;
   margin: 0;
   color: #141414;
@@ -1110,17 +1111,31 @@ figure {
   background-size: 1920px;
   background-color: #ffffff;
 }
-@media (min-width: 1920.1px) {
-  .specification {
-    background-size: 100%;
-  }
-}
 @media (max-width: 576px) {
   .specification {
     margin: 68px 0 0;
     background-image: url("../assets/specification-bg-sm.webp");
     background-position: center bottom;
     background-size: 576px;
+  }
+}
+.specification::before {
+  content: "";
+  position: absolute;
+  bottom: 371px;
+  right: calc(50% + 148px);
+  display: block;
+  width: 177px;
+  height: 144px;
+  background: url("../assets/luftbaloons.webp") center no-repeat;
+  z-index: 5;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .specification::before {
+    display: none;
   }
 }
 .specification__title {
@@ -1132,7 +1147,7 @@ figure {
 }
 .specification__description {
   max-width: 800px;
-  margin: 30px auto 36px;
+  margin: 30px auto 33px;
   text-align: center;
   font-size: 21px;
   font-weight: 300;
@@ -1156,7 +1171,7 @@ figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 36px 0 48px;
+  margin: 33px 0 48px;
   color: #a89877;
   text-align: center;
   font-size: 15px;
@@ -1201,7 +1216,7 @@ figure {
      object-fit: cover;
 }
 .specification__thumbs {
-  margin: 12px 0 280px;
+  margin: 12px 0 275px;
 }
 @media (max-width: 576px) {
   .specification__thumbs {
@@ -1233,8 +1248,8 @@ figure {
 }
 .specification__about {
   position: absolute;
-  left: 37px;
-  bottom: 39px;
+  left: 35px;
+  bottom: 40px;
   z-index: 20;
   max-width: 523px;
   padding: 40px 40px 66px 50px;
@@ -1297,13 +1312,15 @@ figure {
           transform: rotate(180deg);
 }
 .specification__about-description {
-  margin: 24px 0 0;
+  margin: 16px 0 0;
   color: #141414;
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
 }
 .specification__advantages {
+  position: relative;
+  left: -8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1314,7 +1331,8 @@ figure {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 16px;
-  margin: 0 0 124px;
+  max-width: 1304px;
+  margin: 0 auto 124px;
 }
 @media (max-width: 768px) {
   .specification__advantages {
@@ -1354,20 +1372,9 @@ figure {
     padding: 90px 30px 50px;
   }
 }
-.specification__advantage:first-child::before {
-  content: "";
-  position: absolute;
-  top: 281px;
-  right: 51px;
-  display: block;
-  width: 177px;
-  height: 144px;
-  background: url("../assets/luftbaloons.webp") center no-repeat;
-}
-@media (max-width: 1436px) {
-  .specification__advantage:first-child::before {
-    display: none;
-  }
+.specification__advantage:first-child {
+  padding: 96px 55px 51px;
+  margin-bottom: -10px;
 }
 .specification__advantage:after {
   content: "";

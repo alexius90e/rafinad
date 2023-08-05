@@ -1,4 +1,5 @@
 .specification {
+  position: relative;
   padding-top: 122px;
   margin: 0;
   color: $black;
@@ -8,15 +9,32 @@
   background-size: 1920px;
   background-color: $white;
 
-  @media (min-width: 1920.1px) {
-    background-size: 100%;
-  }
+  // @media (min-width: 1920.1px) {
+  //   background-size: 100%;
+  // }
 
   @include mobile {
     margin: 68px 0 0;
     background-image: url('../assets/specification-bg-sm.webp');
     background-position: center bottom;
     background-size: 576px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 371px;
+    right: calc(50% + 148px);
+    display: block;
+    width: 177px;
+    height: 144px;
+    background: url('../assets/luftbaloons.webp') center no-repeat;
+    z-index: 5;
+    transform: translateX(-50%);
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__title {
@@ -26,7 +44,7 @@
 
   &__description {
     max-width: 800px;
-    margin: 30px auto 36px;
+    margin: 30px auto 33px;
     text-align: center;
     font-size: 21px;
     font-weight: 300;
@@ -44,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 36px 0 48px;
+    margin: 33px 0 48px;
     color: #a89877;
     text-align: center;
     font-size: 15px;
@@ -93,7 +111,7 @@
   }
 
   &__thumbs {
-    margin: 12px 0 280px;
+    margin: 12px 0 275px;
 
     @include mobile {
       margin: 12px 0 450px;
@@ -125,8 +143,8 @@
 
   &__about {
     position: absolute;
-    left: 37px;
-    bottom: 39px;
+    left: 35px;
+    bottom: 40px;
     z-index: 20;
     max-width: 523px;
     padding: 40px 40px 66px 50px;
@@ -182,7 +200,7 @@
     }
 
     &-description {
-      margin: 24px 0 0;
+      margin: 16px 0 0;
       color: $black;
       font-size: 16px;
       font-weight: 300;
@@ -191,11 +209,14 @@
   }
 
   &__advantages {
+    position: relative;
+    left: -8px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
-    margin: 0 0 calc(260px - 136px);
+    max-width: 1304px;
+    margin: 0 auto calc(260px - 136px);
 
     @include tablet {
       flex-direction: column;
@@ -226,20 +247,8 @@
     }
 
     &:first-child {
-      &::before {
-        content: '';
-        position: absolute;
-        top: 281px;
-        right: 51px;
-        display: block;
-        width: 177px;
-        height: 144px;
-        background: url('../assets/luftbaloons.webp') center no-repeat;
-
-        @media (max-width: 1436px) {
-          display: none;
-        }
-      }
+      padding: 96px 55px 51px;
+      margin-bottom: -10px;
     }
 
     &:after {
