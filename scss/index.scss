@@ -4,6 +4,15 @@
 @import './b-mixins';
 @import './b-reset';
 
+// Modules
+
+@import './m-button';
+@import './m-container';
+@import './m-cube-logo';
+@import './m-logo';
+@import './m-menu';
+@import './m-legend';
+
 // Layouts
 
 @import './l-apartments';
@@ -19,12 +28,5 @@
 @import './l-details';
 @import './l-details-contacts';
 
-// Modules
 
-@import './m-button';
-@import './m-container';
-@import './m-cube-logo';
-@import './m-logo';
-@import './m-menu';
-@import './m-legend';
 @import './m-doubleRangeSlider';

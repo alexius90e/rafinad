@@ -1,6 +1,6 @@
 .apartments {
   position: relative;
-  padding: 90px 0 84px;
+  padding: 90px 0 94px;
   background-color: $black;
 
   @include mobile {
@@ -9,7 +9,7 @@
 
   &__title {
     @include titleBgWhite;
-    margin: 54px 0 13px;
+    margin: 60px 0 13px;
     color: $white;
 
     @include mobile {
@@ -19,7 +19,7 @@
 
   &__description {
     max-width: 640px;
-    margin: 13px auto 52px;
+    margin: 13px auto 72px;
     color: $white;
     text-align: center;
     font-size: 21px;
@@ -76,7 +76,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 240px;
+      width: 210px;
 
       & img {
         max-width: 240px;
@@ -106,7 +106,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       gap: 8px 24px;
-      margin: 0 0 30px;
+      margin: 0 0 24px;
       padding: 0;
       font-size: 18px;
       font-weight: 300;
@@ -161,7 +161,7 @@
     }
 
     &-price {
-      flex: 1 0 30%;
+      flex: 1 0 42%;
       width: max-content;
       padding: 7px 20px;
       border: 1px solid rgba(0, 0, 0, 0.12);
@@ -193,6 +193,7 @@
       gap: 10px;
 
       & .button {
+        max-width: 320px;
         box-shadow: none;
       }
     }
@@ -344,5 +345,11 @@
   &.active &__layout {
     z-index: 5;
     opacity: 1;
+  }
+
+  &__buttons-wrapper {
+    & > .button.button_primary {
+      padding: 32px 0;
+    }
   }
 }

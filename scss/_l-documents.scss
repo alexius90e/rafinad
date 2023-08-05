@@ -30,8 +30,12 @@
       align-items: center;
 
       &-image {
-        height: 240px;
+        height: 332px;
         aspect-ratio: 1 / 1.4;
+
+        @include laptop {
+          height: 240px;
+        }
 
         @include mobile {
           height: 204px;

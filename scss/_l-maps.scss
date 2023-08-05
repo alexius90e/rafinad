@@ -5,7 +5,8 @@
   &__title {
     @include titleBgWhite;
     max-width: 512px;
-    margin: 60px auto 73px;
+    margin: 60px auto 100px;
+    line-height: 73px;
   }
 
   &__info {
@@ -58,7 +59,7 @@
       &::before {
         content: '';
         position: absolute;
-        top: calc((-70px / 2));
+        top: calc((-52px / 2));
         display: block;
         width: 65px;
         height: 70px;

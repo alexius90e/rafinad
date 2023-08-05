@@ -1,5 +1,5 @@
 .contacts {
-  padding: 0 0 168px;
+  padding: 0 0 180px;
   background-image: url('../assets/contacts/contacts-bg.webp');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
   &__title {
     @include titleBgBlack;
     max-width: 1080px;
-    margin: 50px auto 100px;
+    margin: 54px auto 100px;
 
     @include tablet {
       margin: 50px auto 440px;
@@ -33,7 +33,7 @@
   }
 
   &__info {
-    max-width: 428px;
+    max-width: 418px;
     padding: 54px 58px 48px;
     border-radius: 10px;
     border: 1px solid #fff;
@@ -97,7 +97,7 @@
     }
 
     &-link {
-      margin-bottom: 18px;
+      margin-bottom: 10px;
     }
 
     &-buttons {
