@@ -1,4 +1,5 @@
 import './burger-menu.js';
+import './modal.js';
 
 export const detailsSliderThumbs = new Swiper('#detailsSliderThumbs', {
   spaceBetween: 15,
