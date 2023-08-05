@@ -93,7 +93,7 @@
 
             <p class="first-screen__text">новый формат жизни на природе в 10 км от Москвы</p>
 
-            <button class="button button_primary">
+            <button class="button button_primary modal-toggler">
               <b>Записаться на экскурсию</b><br />
               <span>по Жилому Комплексу</span>
             </button>
@@ -370,7 +370,7 @@
                 и наш менеджер перезвонит вам в течение нескольких минут
               </p>
 
-              <button class="button button_primary">Начать консультацию</button>
+              <button class="button button_primary modal-toggler">Начать консультацию</button>
             </div>
 
             <div class="consultation__manager">
@@ -902,7 +902,7 @@
             <div class="contacts__info-link">С 9:00 до 22:00, без выходных и праздников</div>
 
             <div class="contacts__info-buttons">
-              <button class="button button_primary">записаться на экскурсию</button>
+              <button class="button button_primary modal-toggler">записаться на экскурсию</button>
               <a href="#">Скачать презентацию жк</a>
             </div>
           </div>
@@ -1054,5 +1054,63 @@
         </div>
       </section>
     </main>
+
+    <div class="modal">
+      <div class="modal__layout">
+        <div class="modal__window">
+          <div class="excursion__form">
+            <div class="excursion__form-wrapper">
+              <h3 class="excursion__title-secondary">Заполните форму</h3>
+
+              <p class="excursion__description">
+                и специалист свяжется с вами, и расскажет как будет проходить экскурсия по жилому
+                комплексу
+              </p>
+
+              <form>
+                <input
+                  class="excursion__form-input excursion__form-input_name"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+
+                <input
+                  class="excursion__form-input excursion__form-input_date"
+                  type="text"
+                  name="date"
+                  placeholder="Предполагаемая дата"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                  required
+                />
+
+                <input
+                  class="excursion__form-input excursion__form-input_phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Введите номер телефона"
+                  required
+                />
+
+                <input
+                  class="button button_primary"
+                  type="submit"
+                  value="записаться на экскурсию в «Rafinad»"
+                />
+              </form>
+
+              <div class="excursion__agreement">
+                Нажимая на кнопку, вы даете свое согласие на
+                <span>обработку персональных данных</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal__close-button"></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

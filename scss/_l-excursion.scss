@@ -128,18 +128,21 @@
 
   &__main {
     flex: 1 0 450px;
+
+    @include tablet {
+      flex: 1 0 33%;
+    }
   }
 
   &__main &__title {
-    margin-top: 58px;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-
-    @media (min-width: 1440px) {
+    @media (min-width: 1439px) {
       margin-left: -20px;
+      margin-top: 58px;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 58px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
     }
   }
 
@@ -151,6 +154,8 @@
     letter-spacing: 1.2px;
 
     @include desktop {
+      font-size: 20px;
+      line-height: 30px;
       padding-left: 0;
     }
   }
@@ -242,9 +247,11 @@
   }
 
   &__info {
-    padding-top: 76px;
-    padding-left: 25px;
-    
+    @media (min-width: 1439px) {
+      padding-top: 76px;
+      padding-left: 25px;
+    }
+
     & .cube-logo {
       margin: 0 0 29px;
       background-position: left center;
@@ -263,11 +270,14 @@
       flex-direction: column;
       gap: 20px;
       margin: 36px 0 0;
-      padding-left: 12px;
       font-size: 16px;
       font-weight: 300;
       line-height: 20px;
       list-style: none;
+
+      @media (min-width: 1439px) {
+        padding-left: 12px;
+      }
 
       @include tablet {
         align-items: center;
