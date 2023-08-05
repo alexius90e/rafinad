@@ -66,51 +66,55 @@
     <main>
       <article class="details">
         <div class="container">
-          <div class="details__slider">
-            <div class="swiper" id="detailsSlider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
+          <div class="details__sliders">
+            <div class="details__sliders_main">
+              <div class="swiper" id="detailsSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-              </div>
 
-              <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
 
-            <div class="swiper" id="detailsSliderThumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/apartaments/apartment.svg" alt="" />
+            <div class="details__sliders_thumbs">
+              <div class="swiper" id="detailsSliderThumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/apartaments/apartment.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,23 +200,85 @@
               <a href="mailto:sales@gmail.com">sales@gmail.com</a>
             </div>
 
-            <div class="details-contacts__info-label details-contacts__info-label_address">Адрес</div>
+            <div class="details-contacts__info-label details-contacts__info-label_address">
+              Адрес
+            </div>
             <div class="details-contacts__info-link">
               <a href="tel:+0(000)000-00-00">Название ул., д. 00, ЖК «Rafinad»</a>
             </div>
 
-            <div class="details-contacts__info-label details-contacts__info-label_time">График работы</div>
+            <div class="details-contacts__info-label details-contacts__info-label_time">
+              График работы
+            </div>
             <div class="details-contacts__info-link">
               С 9:00 до 22:00, без выходных и праздников
             </div>
 
             <div class="details-contacts__info-buttons">
-              <button class="button button_primary">записаться на экскурсию</button>
+              <button class="button button_primary modal-toggler">записаться на экскурсию</button>
               <a href="#">Скачать презентацию жк</a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <div class="modal">
+      <div class="modal__layout">
+        <div class="modal__window">
+          <div class="excursion__form">
+            <div class="excursion__form-wrapper">
+              <h3 class="excursion__title-secondary">Заполните форму</h3>
+
+              <p class="excursion__description">
+                и специалист свяжется с вами, и расскажет как будет проходить экскурсия по жилому
+                комплексу
+              </p>
+
+              <form>
+                <input
+                  class="excursion__form-input excursion__form-input_name"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+
+                <input
+                  class="excursion__form-input excursion__form-input_date"
+                  type="text"
+                  name="date"
+                  placeholder="Предполагаемая дата"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                  required
+                />
+
+                <input
+                  class="excursion__form-input excursion__form-input_phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Введите номер телефона"
+                  required
+                />
+
+                <input
+                  class="button button_primary"
+                  type="submit"
+                  value="записаться на экскурсию в «Rafinad»"
+                />
+              </form>
+
+              <div class="excursion__agreement">
+                Нажимая на кнопку, вы даете свое согласие на
+                <span>обработку персональных данных</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal__close-button"></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

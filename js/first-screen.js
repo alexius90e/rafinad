@@ -1,6 +1,6 @@
 export const firstScreenSlider = new Swiper('#firstScreenSlider', {
   loop: true,
-  spaceBetween: 11,
+  spaceBetween: 15,
   freeMode: true,
   breakpoints: {
     320: {
@@ -16,7 +16,7 @@ export const firstScreenSlider = new Swiper('#firstScreenSlider', {
       slidesPerView: 5.5,
     },
     1200: {
-      slidesPerView: 6.5,
+      slidesPerView: 6.2,
     },
   },
   navigation: {
