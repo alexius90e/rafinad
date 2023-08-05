@@ -16,7 +16,7 @@
     & .first-screen-primary,
     & .first-screen-secondary,
     & .first-screen-bg {
-      height: 900px;
+      height: 910px;
       transform: scale(1.08);
       will-change: transform;
 
@@ -249,12 +249,12 @@
   #firstScreenSlider {
     & .swiper-slide {
       & img {
-        min-height: 170px;
-        max-width: 100%;
+        height: 170px;
+        width: 100%;
         object-fit: cover;
 
         @include mobile {
-          min-height: 156px;
+          height: 156px;
         }
       }
     }
