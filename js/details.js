@@ -5,7 +5,6 @@ export const detailsSliderThumbs = new Swiper('#detailsSliderThumbs', {
   spaceBetween: 15,
   freeMode: true,
   watchSlidesProgress: true,
-
   breakpoints: {
     320: {
       direction: 'horizontal',
@@ -21,8 +20,8 @@ export const detailsSliderThumbs = new Swiper('#detailsSliderThumbs', {
 const detailsSlider = new Swiper('#detailsSlider', {
   loop: true,
   navigation: {
-    nextEl: '.details__slider .swiper-button-next',
-    prevEl: '.details__slider .swiper-button-prev',
+    nextEl: '.details__sliders .swiper-button-next',
+    prevEl: '.details__sliders .swiper-button-prev',
   },
   pagination: {
     el: '#detailsSlider .swiper-pagination',
