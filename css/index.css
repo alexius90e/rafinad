@@ -3021,7 +3021,7 @@ figure {
   top: auto;
   bottom: 16px;
 }
-.details__slider:hover .swiper-button-prev, .details__slider:hover .swiper-button-next {
+.details__sliders:hover .swiper-button-prev, .details__sliders:hover .swiper-button-next {
   opacity: 1;
 }
 .details__info {
