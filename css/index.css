@@ -3402,6 +3402,7 @@ figure {
   position: absolute;
   left: 0;
   right: 0;
+  height: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-appearance: none;
@@ -3436,6 +3437,15 @@ figure {
 .double-range-slider input[type=range]:active, .double-range-slider input[type=range]:focus {
   outline: none;
 }
+.double-range-slider input[type=range]:first-child::-moz-range-track {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 5px;
+  background: #be9e6e;
+  border: none;
+  border-radius: 3px;
+}
 .double-range-slider input[type=range]::-webkit-slider-thumb {
   height: 21px;
   width: 21px;
@@ -3461,12 +3471,36 @@ figure {
   width: 2000px;
   height: 2px;
 }
+.double-range-slider input[type=range]::-moz-range-thumb {
+  position: relative;
+  z-index: 11;
+  height: 20px;
+  width: 20px;
+  border-radius: 21px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin: 5px 0;
+  cursor: pointer;
+  -moz-appearance: none;
+       appearance: none;
+  pointer-events: all;
+  box-sizing: border-box;
+  border: 5px solid #be9e6e;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
 .double-range-slider input[type=range]:nth-child(1)::-webkit-slider-thumb::before {
+  background-color: red;
+}
+.double-range-slider input[type=range]:nth-child(1)::-moz-range-thumb::before {
   background-color: red;
 }
 .double-range-slider input[type=range]:nth-child(2) {
   background: none;
 }
 .double-range-slider input[type=range]:nth-child(2)::-webkit-slider-thumb::before {
+  background-color: gray;
+}
+.double-range-slider input[type=range]:nth-child(2)::-moz-range-thumb::before {
   background-color: gray;
 }
