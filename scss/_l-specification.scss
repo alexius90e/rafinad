@@ -9,10 +9,6 @@
   background-size: 1920px;
   background-color: $white;
 
-  // @media (min-width: 1920.1px) {
-  //   background-size: 100%;
-  // }
-
   @include mobile {
     margin: 68px 0 0;
     background-image: url('../assets/specification-bg-sm.webp');
@@ -95,16 +91,29 @@
 
     & .swiper {
       &-slide {
+        position: relative;
         height: 650px;
 
-        @include mobile {
-          height: 196px;
+        @include laptop {
+          height: auto;
         }
 
         & img {
           height: 100%;
           width: 100%;
           object-fit: cover;
+
+          @include laptop {
+            height: 480px;
+          }
+
+          @include tablet {
+            height: 320px;
+          }
+
+          @include mobile {
+            height: 196px;
+          }
         }
       }
     }
