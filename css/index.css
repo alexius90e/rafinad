@@ -2057,15 +2057,12 @@ figure {
   line-height: 20px;
 }
 .contacts {
+  position: relative;
   padding: 0 0 180px;
   background-image: url("../assets/contacts/contacts-bg.webp");
   background-position: center bottom;
   background-repeat: no-repeat;
-}
-@media (max-width: 576px) {
-  .contacts {
-    padding: 0;
-  }
+  background-size: 1920px;
 }
 @media (min-width: 1920.1px) {
   .contacts {
@@ -2075,14 +2072,48 @@ figure {
 @media (max-width: 768px) {
   .contacts {
     background-position-x: 70%;
-    background-position-y: -46%;
+    background-position-y: 0;
   }
 }
 @media (max-width: 576px) {
   .contacts {
-    background-position-x: 66%;
-    background-position-y: -100%;
+    padding: 0;
+    background-position-x: 65%;
   }
+}
+.contacts::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 687px;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 300px;
+  background-image: url("../assets/contacts/contacts-clouds-bg.webp");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1920.1px) {
+  .contacts::before {
+    top: 0;
+    bottom: auto;
+    height: 600px;
+    background-size: 200%;
+    background-position: center bottom 100px;
+  }
+}
+@media (max-width: 768px) {
+  .contacts::before {
+    top: 0;
+    bottom: auto;
+    height: 400px;
+  }
+}
+.contacts .container {
+  position: relative;
+  z-index: 2;
 }
 .contacts__title {
   background-image: linear-gradient(351deg, #1c1c25 40%, #acadad 100%);
