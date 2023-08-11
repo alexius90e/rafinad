@@ -9,6 +9,10 @@
   background-size: 1920px;
   background-color: $white;
 
+  @media (min-width: 1920.1px) {
+    background-size: 100%;
+  }
+
   @include mobile {
     margin: 68px 0 0;
     background-image: url('../assets/specification-bg-sm.webp');
