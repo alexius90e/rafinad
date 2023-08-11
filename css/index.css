@@ -1429,6 +1429,11 @@ figure {
   background-size: 1920px;
   background-color: #ffffff;
 }
+@media (min-width: 1920.1px) {
+  .specification {
+    background-size: 100%;
+  }
+}
 @media (max-width: 576px) {
   .specification {
     margin: 68px 0 0;
